@@ -1,0 +1,18 @@
+{
+  "name": "5-conexao-nodejs-e-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./1 - Conteudo/7-full_join.js",
+  "scripts": {
+    "dev": "nodemon ./1 - Conteudo/7-full_join.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
