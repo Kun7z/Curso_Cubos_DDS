@@ -1,6 +1,5 @@
 const pool = require('../conexao')
-const jwt = require('jsonwebtoken')
-const senhaJwt = require('../senhaJwt');
+
 
 const listarCarros = async (req, res) => {
     // const { token } = req.body;
