@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- tag pai html -->
+
+<head><!-- tag head filha da pai html, porque fica dentro do hml-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança no CSS</title>
+    <!-- dando cor a tag pai body-->
+    <style>
+        body {
+            color: red;
+        }
+
+        h2 {
+            /* reescrevendo a cor do pai red para o h2 dentro da tag pai body*/
+            color: blue;
+        }
+
+        /*Definindo o estilo para não pegar automático do navegador*/
+        a {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body><!--tag pai-->
+    <h1>Herança</h1> <!-- Tag filho do pai body-->
+    <h2>Meu subtitulo</h2>
+    <!--Pega uma cor automática do navegador, mesmo sendo filho da tag pai que recebe a estilização da cor vermelha -->
+    <a href="#">Meu Link</a>
+
+</body>
+
+</html>

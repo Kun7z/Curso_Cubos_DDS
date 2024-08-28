@@ -1,0 +1,14 @@
+/*
+Cascata é o nome que se da para quando
+tentamos aplicar varias regras para o
+mesmo elemento, por exemplo:
+
+*/
+
+h1 {
+    color: green;
+}
+
+h1 {
+    color: blue;
+}

@@ -1,0 +1,35 @@
+/*
+Os Códigos CSS são compostos por:
+
+- SELETOR
+
+- PROPRIEDADE
+
+- VALOR
+
+Cada um deles tem uma responsabilidade que é fundamental
+para a estilização.
+
+*/
+
+/*--------------------------------------------------------*/
+
+
+seletor {
+    /* seletor = nome da tag, <p>,<img>,<a>,<h1>*/
+    propriedade: valor;
+    /* propriedade = define o que vai ser alterado, cor da fonte, fonte, tamanho do espaçamento, etc
+    /* valor= altera o que a propriedade define. Exemplo: se for alterado fonte, coloco no valor o tipo de fonte.*/
+}
+
+/*SELETOR = responsável por selecionar um elemento
+que será estilizado.
+
+PROPRIEDADE => diz o que será alterado naquele
+elemento selecionado
+
+VALOR = Informa a proporção, tipo, tamanho que a
+a propriedade será alterada, ou seja, esse é um
+valor variável, o que permite que nós tenhamos
+diversas variações.
+*/

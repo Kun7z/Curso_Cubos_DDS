@@ -1,0 +1,60 @@
+<!--
+1. Inline, ou seja, diretamente no
+elemento html.
+
+2. Dentro da tag <style>, essa tag fica
+dentro da tag <head> do arquivo HTML
+
+3. Em um arquivo externo, o arquivo deve
+ter a extensão .css
+
+-->
+
+<!-- CSS INLINE -->
+
+<body>
+    <h1 style="color:red;font-size: 60px;">Meu h1</h1>
+</body>
+
+<!-- TAG STYLE -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>minha div</div>
+</body>
+
+</html>
+
+<!-- Arquivo externo -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>div</div>
+</body>
+
+</html>

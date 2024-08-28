@@ -1,0 +1,55 @@
+<!-- 
+
+ A especificidade é um pouco mais
+complexa, mas resumidamente quanto mais
+nós especificamos qual elemento queremos
+estilizar, mais ele terá prioridade em
+relação aos outros.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+        }
+
+        p.cor-vermelha {
+            color: red
+        }
+
+        h2#background-amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article>
+                <h1>Noticia</h1>
+                <p class="cor-vermelha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui cumque ex, earum
+                    sunt harum, temporibus
+                    quod voluptatibus fuga mollitia ab perferendis dicta, corporis delectus incidunt. Optio reiciendis
+                    exercitationem nam possimus.</p>
+                <h2 class="cor-vermelha" id="background-amarelo">CSS é uma linguagem de estilo</h2>
+                <!-- Mesmo que exista a classe cor vermelha, no style estou dizendo que apenas a tag <p> com classe cor-vermelha irá receber a color:red, portanto essa por ser tag h2, não encaixa, sendo assim pega a cor branca do body por herança-->
+
+                <!-- Como botei o id e defini por especificidade que h2#background-amarelo{} terá a cor amarela de fundo, foi definida que esse subtitulo h2 ganhará a cor de background amarelo.-->
+
+                <h2>CSS é uma linguagem de estilo</h2>
+                <!-- Por não ter nem ID nem classe, irá pegar por herança as configurações do body-->
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

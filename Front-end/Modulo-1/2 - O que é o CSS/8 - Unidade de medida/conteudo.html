@@ -1,0 +1,66 @@
+<!--
+Nós temos diversas unidades de medidas,
+sendo elas:
+
+- em
+- rem
+— px
+- cm
+- %
+
+Mas nesse primeiro momento iremos usar
+apenas % e px
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: red;
+        }
+
+        section {
+            background-color: blue;
+            height: 600px;
+            width: 600px;
+        }
+
+        .section-porcentagem {
+            background-color: orange;
+            width: 60%;
+            height: 50%;
+            /*se minha section tiver 100px, vai ficar com 60px, por ser em porcentagem*/
+        }
+
+        .imagem-porcentagem {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="https://placehold.co/600x400" alt="imagem teste">
+        <h1>Olá unidades de medida</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta possimus magni omnis harum quisquam
+            quasi fuga ducimus facere asperiores! Voluptatem dolores necessitatibus omnis totam, praesentium dolor
+            nesciunt
+            commodi asperiores.</p>
+    </section>
+    <section class="section-porcentagem">
+        <img class="imagem-porcentagem" src=" https://placehold.co/600x400" alt="imagem teste">
+        <h1>Olá unidades de medida</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta possimus magni omnis harum quisquam
+            quasi fuga ducimus facere asperiores! Voluptatem dolores necessitatibus omnis totam, praesentium dolor
+            nesciunt
+            commodi asperiores.</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/*
+- UNIVERSAL: representado pelo *
+
+- ELEMENTO: representado pelo nome do
+elemento, por exemplo: h1, p, div, video,
+etc.
+
+- CLASSE: representado por .nome-classe
+
+- ID: Representado pelo #id-elemento
+
+Exemplo:
+*/
+
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento */
+h1 {
+    color: green;
+}
+
+/* classe */
+.cards {
+    width: 300px;
+    height: 500px;
+    border: solid 1px lightgray;
+}
+
+/* ID */
+#first-div {
+    width: 1920px;
+    height: 100vh;
+    background-color: black;
+}
