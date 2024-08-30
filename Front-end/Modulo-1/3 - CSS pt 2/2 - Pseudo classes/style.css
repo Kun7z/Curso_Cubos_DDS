@@ -1,0 +1,28 @@
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: red;
+}
+
+a {
+    color: black;
+    display: block
+}
+
+a:visited {
+    color: orange;
+}
+
+input:focus {
+    background-color: blueviolet;
+}
+
+li:first-child {
+    background-color: brown;
+}
+
+li:last-child {
+    background-color: blue;
+}

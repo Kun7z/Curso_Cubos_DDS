@@ -1,0 +1,20 @@
+input::placeholder {
+    /*Pseudo elemento, altera apenas a cor do texto que aparece para digitar */
+    color: red;
+}
+
+input {
+    color: blue;
+    /*Altera a cor dos caracteres que é digitado*/
+}
+
+h1.formulario::before {
+    /*Coloca algo antes do conteúdo do h1 */
+    content: "Nosso ";
+}
+
+h1.formulario::after {
+    /*Coloca algo depois do conteúdo do h1 */
+    content: " de cadastro.";
+    background-color: red;
+}

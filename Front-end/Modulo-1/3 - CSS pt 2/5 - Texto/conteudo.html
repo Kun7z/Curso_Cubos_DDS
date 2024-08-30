@@ -1,0 +1,62 @@
+<!-- 
+
+Os textos possuem propriedades que modificam sua aparência, as
+principais são:
+
+- text-align: alinha o texto, Ex.: center, left, right
+
+- text-decoration: adiciona uma decoração ao texto, Ex.: underline
+
+- font-family: modifica a fonte padrão. Ex.: adiciona a fonte open-sans
+
+- font-size: Modifica o tamanho da fonte. Ex.: 22px;
+
+- font-weight: Modifica a grossura da fonte, Ex.: bold, 200, 300, 400, etc.
+
+- color: modifica a cor, Ex.: red, blue, f45ceI8;
+
+- Vine-height: Modifica o espaço entre as linhas de um texto, Ex.: 5px
+
+- text-transform: Transforma o texto, Ex.: uppercase, lowercase, capitalize
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 120px;
+            font-family: 'Courier New', Courier, monospace
+                /* Precisa ter a fonte no próprio computador, podendo ser necessário importar no fonts.google.com */
+        }
+
+        h2 {
+            font-size: 120px;
+            font-family: "Inter", sans-serif;
+            color: blue;
+            line-height: 50px;
+            /* espaçamento de uma linha pra outra*/
+            text-align: justify;
+            /* Alinhamento */
+            font-weight: 1000;
+            /* Grossura da linha */
+            text-transform: lowercase;
+            /* deixa tudo minúsculo */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meu texto</h1>
+    <h2>Meu texto com fonte importada</h2>
+</body>
+
+</html>

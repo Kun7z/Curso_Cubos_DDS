@@ -1,0 +1,57 @@
+<!-- 
+ Existem “algumas maneiras de selecionar um elemento do HTML.
+Nós já aprendemos a selecionar usando:
+
+- nome-elemento, ex.: h1
+
+- #id, ex.:
+<h1 id=”id-elemento”>
+    Meu hl1
+</h1>
+
+- .classe, ex.:
+<h3 class=”classe-elemento”>
+    Meu h3
+</h3>
+
+-->
+
+<!-- Mas nós temos também maneiras de
+combinar esses seletores, veja
+abaixo:
+-->
+
+<!-- elemento [espaço] elemento -->
+
+<style>
+    div span {
+        color: green;
+    }
+</style>
+
+<!-- Todo span dentro da div, ficará com a cor verde-->
+
+<!-- ---------------------- -->
+
+<!-- elemento + elemento -->
+
+<style>
+    ul+li {
+        font-size: 30px;
+    }
+</style>
+
+<!-- Irá selecionar qualquer elemento li que segue após uma tag ul e selecionará a fonte para 30px. Basicamente estilizará algo depois da primeira tag que siga a segunda tag. -->
+
+<!-- ---------------------- -->
+
+<!-- elemento ~ elemento -->
+
+<style>
+    p~span {
+        text-decoration: underline;
+        font-size: 18px;
+    }
+</style>
+
+<!-- Irá selecionar todos os elementos do tipo <span> que seguir um elemento <p> dentro de um mesmo elemento pai. -->

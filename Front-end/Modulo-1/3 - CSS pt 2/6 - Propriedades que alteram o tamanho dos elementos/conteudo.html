@@ -1,0 +1,57 @@
+<!--
+
+- height: altura, Ex.: 100%, 100vh, 100px
+
+- width: largura, Ex.: 100%, 100vh, 100px
+
+- padding: espaçamento, Ex.: 100%, 100px
+
+- margin: margin, Ex.: 100%, 100px
+
+- box-sizing: define se o padding e border faz parte do tamanho do elemento ou não. Ex.: border-box
+
+- color: Cor da fonte background-color: Cor do fundo
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades que alteram o tamanho do elemento</title>
+    <style>
+        div {
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+            box-sizing: border-box;
+            /* Faz com que o tamanho de altura e largura conte com o padding, não ultrapassando do limite que vc passou.*/
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>
+            Lorem ipsum dolor
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sint corporis laboriosam quod ex nemo et
+            dolorum, nisi odit blanditiis reprehenderit! Sed possimus recusandae ullam amet ducimus, velit dolorem
+            deserunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cupiditate hic eum doloremque nisi impedit
+            molestias quam in quod quibusdam vero, numquam maiores? Fugiat adipisci ullam totam asperiores itaque
+            placeat?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, libero et beatae dignissimos expedita itaque
+            quis
+            voluptas ducimus nisi ratione ab repellat quisquam commodi aliquam perspiciatis debitis necessitatibus,
+            natus
+            vel.</p>
+    </div>
+</body>
+
+</html>

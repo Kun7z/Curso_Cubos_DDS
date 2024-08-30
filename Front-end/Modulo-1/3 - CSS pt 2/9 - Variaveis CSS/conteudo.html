@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis CSS</title>
+    <style>
+        :root {
+            /* Root é como se fosse a raiz do html, criando variáveis para o escopo inteiro do projeto */
+            --cor-de-fundo: red;
+            --cor-do-texto: yellow;
+            --default-border-size: 8px;
+            --default-border: 8px solid blue;
+        }
+
+        .divVariaveis {
+            /*Variáveis dentro de uma classe */
+            --cor-de-fundo: black;
+            --cor-do-texto: white;
+            --default-border-size: 20px;
+            --default-border: 20px solid red;
+        }
+
+        h1 {
+            background-color: var(--cor-de-fundo);
+            color: var(--cor-do-texto);
+            border: var(var(--default-border))
+        }
+
+        p {
+            background-color: var(--cor-de-fundo);
+            color: var(--cor-do-texto);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Variaveis CSS</h1>
+    <p>meu P</p>
+    <div class="divVariaveis">
+        <!-- Dentro da div o comportamento é diferente por conta das variáveis que determinei em divVariaveis-->
+        <p>p dentro da Div</p>
+    </div>
+</body>
+
+</html>

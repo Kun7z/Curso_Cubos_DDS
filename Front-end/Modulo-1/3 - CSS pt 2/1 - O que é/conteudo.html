@@ -1,0 +1,38 @@
+<!-- Existem elementos do HTML que possuem várias partes para serem
+estilizadas, por isso foram criados os pseudo-elementos, que nos ajudam
+a estilizar um elemento por partes.
+Por exemplo:
+-->
+<style>
+    input.exemplo::placeholder {
+        color: blue
+    }
+
+    h1.exemplo::before {
+        content: '"';
+        background-color: purple;
+    }
+
+    h1.exemplo::after {
+        content: '"';
+        background-color: orange;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1 class="formulario">formulário</h1>
+    <input type="text" placeholder="Digite seu nome">
+</body>
+
+</html>

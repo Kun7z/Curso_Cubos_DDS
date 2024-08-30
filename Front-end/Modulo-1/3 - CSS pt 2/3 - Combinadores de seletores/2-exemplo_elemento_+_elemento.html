@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elemento+elemento</title>
+    <style>
+        div+p {
+            /*Um elemento depois daquele elemento vai receber a estilização SE for o elemento correto */
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>p dentro da div</p>
+    </div>
+    <p>p abaixo da div</p> <!-- Esse é o elemento correto, por isso só ele é estilizado   -->
+    <span>
+        span
+    </span>
+    <p> p abaixo do span</p>
+</body>
+
+</html>
