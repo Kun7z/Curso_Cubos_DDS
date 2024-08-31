@@ -1,0 +1,50 @@
+<!--
+Elementos inline, ignoram padding e margin top e bottom
+inline: span, img, input, a
+block: div, h1, p, etc
+
+Porém, o elemento img, age diferente, fazendo com que ele possa ser atribuído margin e padding no top e bottom
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* Reset css */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            background-color: purple;
+            padding: 20px 50px;
+            margin: 20px 20px;
+        }
+
+        p {
+            background-color: green;
+            padding: 20px 50px;
+            /* margin: 20px 20px; */
+        }
+
+        img {
+            background-color: blue;
+            margin: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://placehold.co/100" />
+    <span>texto inline</span>
+    <span>texto inline</span>
+    <p>texto bloco</p>
+</body>
+
+</html>

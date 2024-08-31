@@ -34,10 +34,9 @@ header {
     ;
 }
 
-/* Por que ele está pegando a classe header-container, se ela se chama container header container */
 .header-container {
     height: 84px;
-    /* Por que eu defino a altura aqui e não no container abaixo?*/
+
     padding: 32px 0;
 }
 
@@ -51,6 +50,7 @@ header {
 
 .container {
     width: 1280px;
+    /*Convenção e existe valores pré definidos para tudo, vai se pegando com o tempo */
     margin: auto;
 
 }

@@ -1,0 +1,79 @@
+<!-- 
+O posicionamento absoluto traz resultados muito diferentes.
+
+Primeiro, observe que a lacuna onde o elemento posicionado deveria estar no fluxo do documento não está mais lá. Um elemento posicionado absolute não existe mais no fluxo normal do documento. Em vez disso, ele fica em sua própria camada, separado de todo o resto. Isso é muito útil: significa que podemos criar recursos de UI isolados que não interferem no layout de outros elementos na página. Por exemplo, caixas de informações pop-up, menus de controle, painéis de rolagem, recursos de UI que podem ser arrastados e soltos em qualquer lugar da página e assim por diante. 
+
+Segundo, observe que a posição do elemento mudou. Isso ocorre porque top, bottom, left e right se comportam de forma diferente com posicionamento absoluto. Em vez de posicionar o elemento com base em sua posição relativa dentro do fluxo normal do documento, eles especificam a distância que o elemento deve estar de cada um dos lados do elemento que o contém. Então, neste caso, estamos dizendo que o elemento posicionado absolutamente deve ficar a 30px do topo do "elemento que o contém" e a 30px da esquerda. (Neste caso, o "elemento que o contém" é o bloco que o contém inicial.
+
+Propriedades top, bottom, right e left o afetam.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: red;
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello World</h1>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem
+        Ipsum.
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem
+        Ipsum.
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem
+        Ipsum.
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem
+        Ipsum.
+    </p>
+
+</body>
+
+</html>

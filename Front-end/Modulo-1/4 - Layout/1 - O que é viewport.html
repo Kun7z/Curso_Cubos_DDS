@@ -1,0 +1,64 @@
+<!--
+
+O Viewport consiste em toda a área útil do navegador, ou seja, somente onde o site é exibido,
+descontando tamanho de barras de navegação, ferramentas do desenvolvedor, etc.
+
+Nós temos viewport height e viewport width.
+
+E essas medidas também podem ser usadas para definir altura e largura de elementos, por exemplo:
+
+vw = 1% da viewport width
+
+100vw = 100% da viewport width
+
+vh = 1% da viewport height
+
+100vh = 100% da viewport height
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é viewport</title>
+    <style>
+        * {
+            /* Reset CSS */
+            margin: 0;
+            padding: 0;
+
+        }
+
+        div {
+            background-color: blue;
+            width: 100px;
+            /*pixels */
+            height: 100px;
+            /*pixels */
+        }
+
+        div.div-com-viewport {
+            background-color: purple;
+            width: 100vw;
+            /* 100% largura do tamanho da tela */
+            height: 100vw;
+            /* 100% altura do tamanho da tela */
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+
+        </div>
+    </section>
+    <section>
+        <div class="div-com-viewport"></div>
+    </section>
+</body>
+
+</html>
