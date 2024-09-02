@@ -1,0 +1,60 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #fafafa;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.lista {
+    display: flex;
+    /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    flex-wrap: wrap;
+    /* Faz com que os itens quebrem linha quando chegar ao limite */
+    gap: 32px;
+    /* espaçamento entre linhas e colunas, caso queira só entre linhas ou colunas posso usar gap-column ou gap-row */
+    justify-content: center;
+
+}
+
+.lista_item {
+    width: 400px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    display: flex;
+    /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. No caso essa é a div responsável pelo item, e não o container externo. Como o padrão é row, quebra tudo, mas ao definir flex-direction:column, retorna ao normal */
+    flex-direction: column;
+    row-gap: 16px;
+
+}
+
+.lista_item img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-around; */
+    /* HORIZONTAL */
+    justify-content: center;
+    /* Alterei para ficar no centro o logo e a navegação. */
+    height: 80px;
+    padding: 16px 0;
+    align-items: center;
+    /* VERTICAL */
+    /* Caso eu queira que os itens fiquem no centro, posso alinhar os itens assim */
+    gap: 32px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}

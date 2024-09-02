@@ -1,0 +1,20 @@
+<!-- 
+
+Container x Item
+
+Os containers (onde tem a propriedade display: flex), possuem propriedades diferentes dos items (filhos de quem tem a propriedade display: flex), veja abaixo:
+
+- Container:
+    - flex-direction: Responsável por dizer em qual direção o flex irá posicionar os seus items. Configurações: padrão row, porém sendo possível column, row-reverse e column-reverse.
+    - flexwrap: Por padrão todos os itens tentarão caber em 1 linha, podemos alterar isso e permitir que eles quebrem a linha automaticamente. Configurações: wrap, quebra a linha e no-wrap não quebra a linha, sendo esse o padrão.
+    - justify-content: Define alinhamento ao longo do eixo principal. Se for linha, vai alinhar de acordo a linha, se for column, vai alinhar de acordo a coluna. COnfigurações: flex-start, space-between, flex-end, space-around, center, space-evenly
+    - align-items: Define o comportamento padrão de como os items são dispostos ao longo do eixo Y na linha atual. Configurações: flex-start, flex-end, center, baseline e stretch sendo o padrão.
+
+- item:
+    - flex:
+        - flex-grow: Define a capacidade de um item filho crescer. Determina a quantidade de espaço disponível dentro de um container que o item deve ocupar.
+        - flexshrink:  Faz o inverso do flex-grow, porque define o quanto cada item deve encolher em relação aos outros items.
+        - flex-basis: Define o tamanho padrão de um item antes que o espaço restante seja distribuído.
+    - align-self: Permite que um item alinhe a si mesmo dentro de um container, fugindo da definição padrão do align-items.
+
+-->
