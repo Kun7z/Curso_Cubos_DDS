@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- Formulario -->
+    <form>
+        <!-- Agrupamento -->
+        <fieldset>
+            <!-- legenda para o agrupamento -->
+            <legend>Cadastro de usuário</legend>
+            <!--Input de texto-->
+            <div>
+                <label for="nome"> Nome </label>
+                <input type="text" id="nome" />
+            </div>
+            <!--input de email-->
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+            <!--input de senha-->
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" />
+            </div>
+            <!--input de file-->
+            <div>
+                <label for="arquivo">Senha</label>
+                <input type="file" id="arquivo" />
+            </div>
+            <!--hidden campo invisivel-->
+            <div>
+                <label for="arquivo">Senha</label>
+                <input type="file" id="arquivo" />
+            </div>
+            <!--Campo invisivel-->
+            <div>
+                <input type="hidden" id="idUsuario" value="1">
+
+            </div>
+            <!--Campo checkbox -->
+            <div>
+                <label for="termo">Termos e condições</label>
+                <input type="checkbox" id="termo">
+            </div>
+            <!-- Agrupamento de campos checkbox-->
+            <div>
+                <label for="clt">CLT</label>
+                <input type="checkbox" id="clt" name="tipotrabalho">
+                <!--Feito agrupamento através do name= entre os 2 inputs-->
+                <label for="pj">PJ</label>
+                <input type="checkbox" id="pj" name="tipotrabalho">
+            </div>
+            <!-- Agrupamento de campo de radio-->
+            <div>
+                <label for="clt">CLT</label>
+                <input type="radio" id="clt" name="tipotrabalho">
+                <!--Feito através do name= igual entre os 2 inputs-->
+                <label for="pj">PJ</label>
+                <input type="radio" id="pj" name="tipotrabalho">
+                <!-- Permite escolher só um entre os dois, diferentemente do checkbox.-->
+            </div>
+            <input type="button" value="salvar dados">
+            <button type="submit">Salvar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

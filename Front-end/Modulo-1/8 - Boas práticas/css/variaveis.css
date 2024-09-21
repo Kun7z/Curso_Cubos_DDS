@@ -1,0 +1,10 @@
+:root {
+    --white-900: #ffffff;
+    --black-900: #000000;
+    --purple-900: #8500ee;
+    --purple-100: #f3e3ff;
+    --gray-100: #cccccc;
+    --blue-900: #280e8e;
+    --border-radius: 8px;
+    --border: 1px solid var(--gray-100);
+}

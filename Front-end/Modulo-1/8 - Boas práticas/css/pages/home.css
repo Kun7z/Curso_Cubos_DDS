@@ -1,0 +1,11 @@
+@import url(../variaveis.css);
+@import url(../reset.css);
+@import url(../global.css);
+@import url(../components/header.css);
+@import url(../components/products.css);
+
+
+.banner-primary {
+    border-radius: var(--border-radius);
+
+}

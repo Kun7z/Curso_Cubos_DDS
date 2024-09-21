@@ -1,0 +1,29 @@
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.products__item {
+    background-color: var(--purple-100);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    width: calc(33% - 16px);
+    max-width: 300px;
+    ;
+}
+
+.products__item__image {
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+}
+
+.products__item__name {
+    margin-bottom: 8px;
+}
+
+.products__item__price {
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--blue-900);
+}
