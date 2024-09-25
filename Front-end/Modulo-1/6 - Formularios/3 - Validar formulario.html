@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        /* Se for válido o campo, ou seja se a pessoa preenche corretamente, vai ficar com essa estilização */
+        #texto1:valid {
+            background-color: green;
+            border: 1px solid black;
+        }
+
+        /* Se for inválido o campo, ou seja se a pessoa preenche incorretamente, vai ficar com essa estilização */
+        #texto1:invalid {
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        form:valid {
+            background-color: #cacaca;
+        }
+
+        form:invalid {
+            background-color: red;
+        }
+
+        form:invalid button {
+            opacity: 0.5;
+            pointer-events: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>Texto 1</label>
+        <input type="text" required minlength="3" maxlength="6" id="texto1" />
+        <input type="number" min="0" max="100" />
+        <input type="text" pattern="azul|amarela" />
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+
+</html>
