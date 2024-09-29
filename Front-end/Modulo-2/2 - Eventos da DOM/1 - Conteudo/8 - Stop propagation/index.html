@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop propagation</title>
+    <style>
+        .vo {
+            background-color: red;
+            padding: 20px;
+        }
+
+        .pai {
+            background-color: blue;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vo">
+        <div class="pai" onclick="clicouPai()">
+            <button class="filho" onclick="clicouFilho(event)">Clique</button>
+            <!--parametro event é padrão em onclick-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
