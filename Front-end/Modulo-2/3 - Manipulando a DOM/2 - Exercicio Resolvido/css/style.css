@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    width: 400px;
+    padding: 16px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    margin: 32px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
+input,
+.botaoCadastro {
+    padding: 4px;
+    height: 40px;
+    margin: 16px 0px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 16px;
+    background-color: #036767;
+    color: #fff;
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comprado {
+    background-color: #cccccc;
+    color: #4f4f4f;
+    text-decoration: line-through;
+}
+
+.borda-vermelha {
+    border: 1px solid red;
+}
+
+.botaoExcluir {
+    background: #ccc;
+    border: 0px;
+    color: #403f3f;
+    padding: 4px;
+}
