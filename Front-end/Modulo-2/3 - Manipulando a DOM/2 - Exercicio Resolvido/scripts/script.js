@@ -3,6 +3,22 @@ const inputCadastrar = document.querySelector('input')
 const botaoCadastrar = document.querySelector('button')
 const ul = document.querySelector('ul')
 
+const limparInputCadastrar = () => {
+    inputCadastrar.value = "";
+}
+
+const injetarElementoHTML = (elementoPai, novoElemento) => {
+    elementoPai.appendChild(novoElemento)
+}
+
+const criarElemento = (tagName, texto) => {
+    const elemento = document.createElement(tagName)
+    if (texto) {
+        elemento.textContent = texto;
+    }
+    return elemento;
+}
+
 const injetaLinha = () => {
     //verificando se foi enviado algum valor no input
     if (inputCadastrar.value.length <= 0) {
@@ -11,11 +27,10 @@ const injetaLinha = () => {
     }
 
     //criar uma li
-    const novaLi = document.createElement('li');
+    const novaLi = criarElemento('li')
 
     //cria o botão que vai ficar no lado da linha para excluir
-    const botaoExcluir = document.createElement('button');
-    botaoExcluir.textContent = ' Excluir '
+    const botaoExcluir = criarElemento('button', 'Excluir')
 
     //evento para remoção da linha com click
     botaoExcluir.addEventListener('click', () => {
@@ -23,13 +38,11 @@ const injetaLinha = () => {
     })
 
     //cria o span que vai conter o texto do input
-    const elementoSpan = document.createElement('span');
-    elementoSpan.textContent = inputCadastrar.value
+    const elementoSpan = criarElemento('span', inputCadastrar.value)
 
     //injeta elementos
-    novaLi.append(elementoSpan)
-    novaLi.append(botaoExcluir)
-
+    injetarElementoHTML(novaLi, elementoSpan)
+    injetarElementoHTML(novaLi, botaoExcluir)
 
     //cria evento possível de realizar na li, que no caso é poder riscar ela da lista
     novaLi.addEventListener('click', (event) => {
@@ -38,10 +51,10 @@ const injetaLinha = () => {
     })
 
     //injeta linha no html
-    ul.appendChild(novaLi)
+    injetarElementoHTML(ul, novaLi)
 
     //tira o texto após cadastrar
-    inputCadastrar.value = "";
+    limparInputCadastrar()
 }
 
 botaoCadastrar.addEventListener('click', injetaLinha)
