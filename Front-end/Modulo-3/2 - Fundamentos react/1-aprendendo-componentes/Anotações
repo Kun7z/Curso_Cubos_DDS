@@ -9,3 +9,5 @@ Estruturação de pastas
 src -> components = componentes, que são partes de uma página
 
 src -> pages = páginas, um site pode ter várias páginas, cada página fica dentro dessa pasta.
+
+Normalmente os componentes não são colocados na main.tsx e sim na app.tsx e na main é só chamado o App.tsx
