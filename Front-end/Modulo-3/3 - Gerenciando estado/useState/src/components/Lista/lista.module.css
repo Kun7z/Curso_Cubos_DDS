@@ -1,0 +1,9 @@
+.lista__container {
+    list-style: none;
+    padding: 16px;
+}
+
+.lista__item {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}

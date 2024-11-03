@@ -1,0 +1,10 @@
+.lista {
+    background-color: #fafafa;
+
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 64px 32px;
+}

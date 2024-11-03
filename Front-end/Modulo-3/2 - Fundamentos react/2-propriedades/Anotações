@@ -1,13 +1,1 @@
-arquivo de componentes são criados com a letra maiúscula como boa prática.
-
-Um componente é uma função em javascript ou typescript que retorna jsx ou tsx respectivamente.
-
-Um componente precisa de um elemento pai, seja ele uma div, ou uma tag vazia, denominada de fragmento
-
-Estruturação de pastas
-
-src -> components = componentes, que são partes de uma página
-
-src -> pages = páginas, um site pode ter várias páginas, cada página fica dentro dessa pasta.
-
-Normalmente os componentes não são colocados na main.tsx e sim na app.tsx e na main é só chamado o App.tsx
+n-----
