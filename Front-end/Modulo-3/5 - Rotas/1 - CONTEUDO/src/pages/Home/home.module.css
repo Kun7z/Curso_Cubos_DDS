@@ -1,0 +1,41 @@
+.container__home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.content__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 80%;
+  margin-top: 120px;
+}
+
+.content__home form {
+  display: flex;
+  flex-direction: column;
+
+  width: 600px;
+
+  text-align: center;
+}
+
+.content__home form h2 {
+  margin-bottom: 48px;
+}
+
+.transactions {
+  list-style: none;
+  width: 600px;
+
+  margin-top: 16px;
+}
+
+.transactions li {
+  border-top: 2px solid #ccc;
+  padding: 16px;
+}

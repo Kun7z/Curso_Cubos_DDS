@@ -1,0 +1,38 @@
+.containerLeft {
+  background-image: url("../../assets/sign-in-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerRight__form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.containerRight__title {
+  margin: 0 0 32px 0;
+}
+
+.btn__login {
+  margin-top: 72px;
+}
+
+.register__link {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin-top: 96px;
+}
+
+.register__link__text {
+  margin-right: 10px;
+}
